@@ -22,9 +22,9 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="side-btn btn-flat sidenav-trigger" onclick="updateSideBarButton()" data-activates="side-nav-13">
+        <div class="side-btn btn-flat" data-activates="side-nav-13">
             <div class="side-section" data-activates="side-nav-13">Hello</div>
-            <button class="menu" aria-label="Main Menu" id="butt">
+            <button class="menu" onclick="updateSideBarButton()" aria-label="Main Menu" id="butt">
                 <svg width="55" height="55" viewbox="0 0 100 100">
                     <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"/>
                     <path class="line line2" d="M 20,50 H 80"/>
@@ -34,7 +34,7 @@
         </div>
         <div id="my-content">
             <div class="progress"> 
-                <div class="determinate" id="pgbar" style="width: 56.538%;"></div>                 
+                <div class="determinate" id="pgbar" style="width: 0%"></div>                 
             </div>
             <div class="parallax-container valign-wrapper" style="justify-content: center;"> 
                 <div class="parallax">
@@ -43,59 +43,20 @@
                 <h1 class="white-text center-align">Heading 1</h1> 
             </div>
             <div class="container">
-                <div class="card blue-grey darken-1 section scrollspy"> 
+                <div class="card blue-grey darken-1"> 
                     <div class="card-content white-text"> 
                         <span class="card-title">Card Title</span> 
-                        <p>I am a very simple card. I am good at containing small bits of information.                        I am convenient because I require little markup to use effectively.</p>
-                        <p><br></p>
-                        <p></p>
-                        <p></p>
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                        <p><br></p>
-                        <p></p>
-                        <p></p>
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                        <p><br></p>
-                        <p></p>
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                        <p><br></p>
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                        <p><br></p>
-                        <p><p></p><p></p><p></p></p>
-                        <p><br></p>
-                        <p><p></p><p></p><p></p></p>
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                        <p><br></p>
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                        <p><br></p>
-                        <p><br></p>
-                        <p><p></p><p></p><p></p></p>
-                        <p><p></p><p></p><p></p></p>
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                        <p><br></p>
-                        <p><br></p>
-                        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                        <p></p>
-                        <p></p>
-                        <p></p> 
+                        <p>I am a very simple card. I am good at containing small bits of information.                        I am convenient because I require little markup to use effectively.</p> 
                     </div>                     
                     <div class="card-action"> 
                         <a href="#">This is a link</a> 
                         <a href="#">This is a link</a> 
                     </div>                     
                 </div>
-                <div class="card-panel teal section scrollspy">
+                <div class="card-panel teal"> 
                     <span class="white-text">I am a very simple card. I am good at containing small bits of information.                    I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.                    </span> 
-                    <p><span class="white-text"><br></span></p>
-                    <p><span class="white-text">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.<br></span></p>
-                    <p><span class="white-text"><br></span></p>
-                    <p><span class="white-text"><br></span></p>
-                    <p><span class="white-text">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.<br></span></p>
-                    <p><span class="white-text"><br></span></p>
-                    <p><span class="white-text"><br></span></p>
-                    <p><span class="white-text">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.<br></span></p>
                 </div>
-                <ul class="collection section scrollspy"> 
+                <ul class="collection"> 
                     <li class="collection-item">Alvin
                         <span class="badge">1</span>
                     </li>                     
@@ -127,4 +88,5 @@
             <a href="mobile.html">Mobile</a>
         </li>         
     </ul>
+    <a href="#" data-activates="side-nav-13" class="button-collapse"><i class="medium material-icons">menu_open</i></a>
 </html>

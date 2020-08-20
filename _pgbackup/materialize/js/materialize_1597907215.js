@@ -2235,7 +2235,7 @@ $(document).ready(function(){
             if (menuOut === true) {
               menuOut = false;
               panning = false;
-              removeMenu(false,false);
+              removeMenu(updatesidebar=false);
             }
             else {
 

@@ -3,8 +3,7 @@ $(document).ready(function() {
     $('.parallax').parallax();
    	$('.scrollspy').scrollSpy({
         getActiveElement: function(id) 
-        { console.log(id); }
-    });
+        { console.log('this is the element: a[href="#' + id + '"]'); } );
     $(".dropdown-button").dropdown();
     $(".button-collapse").sideNav();
     $('select').material_select();

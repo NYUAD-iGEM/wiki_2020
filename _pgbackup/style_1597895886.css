@@ -1,6 +1,5 @@
 .side-nav {
     background-color: teal;
-    z-index: 998;
 }
 
 .button-collapse {
@@ -44,15 +43,23 @@
 }
 
 /* the menu to exit animation */
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
 .menu {
     background-color: transparent;
     border: none;
     cursor: pointer;
     display: flex;
     padding: 0;
-    position: absolute;
+    position: fixed;
     left: 0px;
-    top: 90%;
+    top: 80%;
 }
 
 .line {
@@ -94,8 +101,4 @@
     stroke-dasharray: 90 207;
     stroke-dashoffset: -134;
     stroke-width: 6;
-}
-
-button:focus {
-    background-color: transparent;
 }

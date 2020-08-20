@@ -1,9 +1,0 @@
-#sidenav-overlay {
-    opacity: 0;
-    z-index: 0;
-    display: none;
-}
-
-.side-nav {
-    z-index: 10;
-}

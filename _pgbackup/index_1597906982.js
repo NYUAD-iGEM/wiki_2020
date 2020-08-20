@@ -1,10 +1,7 @@
 $(document).ready(function() {
     $('.slider').slider();
     $('.parallax').parallax();
-   	$('.scrollspy').scrollSpy({
-        getActiveElement: function(id) 
-        { console.log(id); }
-    });
+   	$('.scrollspy').scrollSpy();
     $(".dropdown-button").dropdown();
     $(".button-collapse").sideNav();
     $('select').material_select();
@@ -25,6 +22,7 @@ $(document).ready(function() {
 
 
 function updateSideBarButton(){
+    alert('yo')
     var butt=document.getElementById("butt")
     butt.classList.toggle('opened');
     butt.setAttribute('aria-expanded', butt.classList.contains('opened'))

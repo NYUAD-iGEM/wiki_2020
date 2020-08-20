@@ -1,20 +1,17 @@
 $(document).ready(function() {
     $('.slider').slider();
     $('.parallax').parallax();
-   	$('.scrollspy').scrollSpy({
-        getActiveElement: function(id) 
-        { console.log(id); }
-    });
+   	$('.scrollspy').scrollSpy();
     $(".dropdown-button").dropdown();
     $(".button-collapse").sideNav();
     $('select').material_select();
     $('.datepicker').pickadate({
-        selectMonths: true, // Creates a dropdown to control month
-        selectYears: 15 // Creates a dropdown of 15 years to control year
-    });
-    $('.modal-trigger').leanModal();
-    $('.carousel').carousel();
-    $('.side-btn').sideNav({
+        //selectMonths: true, // Creates a dropdown to control month
+        //selectYears: 15 // Creates a dropdown of 15 years to control year
+   // });
+   // $('.modal-trigger').leanModal();
+    //$('.carousel').carousel();
+    $('.side-btn').sidenav({
         onOpenStart: function(el){
            console.log('started');},
         onCloseStart: function(el){console.log('ended');}

@@ -2054,11 +2054,8 @@ $(document).ready(function(){
           });
         }
 
-        function removeMenu(restoreNav,updatesidebar=true) {
-          console.log(updatesidebar);
-		  if (updatesidebar==true){
+        function removeMenu(restoreNav) {
           updateSideBarButton();
-          }
           panning = false;
           menuOut = false;
 
@@ -2235,7 +2232,7 @@ $(document).ready(function(){
             if (menuOut === true) {
               menuOut = false;
               panning = false;
-              removeMenu(false,false);
+              removeMenu();
             }
             else {
 

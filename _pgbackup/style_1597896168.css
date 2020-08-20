@@ -1,6 +1,5 @@
 .side-nav {
     background-color: teal;
-    z-index: 998;
 }
 
 .button-collapse {
@@ -50,9 +49,8 @@
     cursor: pointer;
     display: flex;
     padding: 0;
-    position: absolute;
-    left: 0px;
-    top: 90%;
+    position: relative;
+    top: 80%;
 }
 
 .line {
@@ -94,8 +92,4 @@
     stroke-dasharray: 90 207;
     stroke-dashoffset: -134;
     stroke-width: 6;
-}
-
-button:focus {
-    background-color: transparent;
 }

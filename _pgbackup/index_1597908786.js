@@ -1,10 +1,7 @@
 $(document).ready(function() {
     $('.slider').slider();
     $('.parallax').parallax();
-   	$('.scrollspy').scrollSpy({
-        getActiveElement: function(id) 
-        { console.log(id); }
-    });
+   	$('.scrollspy').scrollSpy();
     $(".dropdown-button").dropdown();
     $(".button-collapse").sideNav();
     $('select').material_select();

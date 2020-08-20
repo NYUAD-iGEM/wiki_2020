@@ -2017,7 +2017,8 @@ $(document).ready(function(){
           dragTarget.css({'right': 0}); // Add Touch Area
         }
 
-        // If fixed, bring menu out
+        // If fixed 
+          , bring menu out
         if (menu_id.hasClass('fixed')) {
             if (window.innerWidth > 992) {
               menu_id.css('left', 0);
@@ -2054,11 +2055,7 @@ $(document).ready(function(){
           });
         }
 
-        function removeMenu(restoreNav,updatesidebar=true) {
-          console.log(updatesidebar);
-		  if (updatesidebar==true){
-          updateSideBarButton();
-          }
+        function removeMenu(restoreNav) {
           panning = false;
           menuOut = false;
 
@@ -2235,7 +2232,7 @@ $(document).ready(function(){
             if (menuOut === true) {
               menuOut = false;
               panning = false;
-              removeMenu(false,false);
+              removeMenu();
             }
             else {
 

@@ -2,9 +2,7 @@ $(document).ready(function() {
     $('.slider').slider();
     $('.parallax').parallax();
    	$('.scrollspy').scrollSpy({
-        getActiveElement: function(id) 
-        { console.log(id); }
-    });
+        getActiveElement: function(id) { console.log('this is the element: a[href="#' + id + '"]'); } );
     $(".dropdown-button").dropdown();
     $(".button-collapse").sideNav();
     $('select').material_select();

@@ -1,10 +1,7 @@
 $(document).ready(function() {
     $('.slider').slider();
     $('.parallax').parallax();
-   	$('.scrollspy').scrollSpy({
-        getActiveElement: function(id) 
-        { console.log(id); }
-    });
+   	$('.scrollspy').scrollSpy();
     $(".dropdown-button").dropdown();
     $(".button-collapse").sideNav();
     $('select').material_select();
@@ -14,7 +11,7 @@ $(document).ready(function() {
     });
     $('.modal-trigger').leanModal();
     $('.carousel').carousel();
-    $('.side-btn').sideNav({
+    $('.side-btn').sidenav({
         onOpenStart: function(el){
            console.log('started');},
         onCloseStart: function(el){console.log('ended');}
